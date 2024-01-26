@@ -65,8 +65,8 @@ int main()
         std::cout << "use_count() = " << mt2.use_count() << std::endl;
 
         {
-            auto mt4 = mt3;
-            *mt4 = *mt4 + 50;
+            auto mt4 = mt3;  //调用copy 构造函数，由于没有定义，会使用编译器的 默认构造函数
+            *mt4 = *mt4 + 50; // 此处会调用 构造函数
             std::cout << "use_count() = " << mt3.use_count() << std::endl;
         }
         std::cout << "mt3: " << *mt3 << std::endl;
