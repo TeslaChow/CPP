@@ -29,7 +29,7 @@ class MyString
     MyString & operator=(const MyString &ms)
     {
         create(ms.buf_len, ms.characters);
-        return *this;
+        return *this; // 此处的 *this 是不是等价于 ms 
     }
     bool create(int buf_len,  const char * data)
     {
