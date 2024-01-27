@@ -64,7 +64,7 @@ int main()
     cout << "----------------------" << endl;
     {
         Derived derived(5);
-        cout << derived << endl;
+        cout << derived << endl;  // 调用子类的 << 输出， 在子类 << 重载中，先将 子类对象强制转换为父类对象(输出会调用父类的<<), 最后输出 obj.c 
         cout << "Product = " << derived.product() << endl; 
     }
     return 0;
