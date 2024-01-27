@@ -51,9 +51,9 @@ int main()
 {
     Mat<int> imat(3,4);
     imat.setElement(1, 2, 256);
-    Mat<float> fmat(2,3);
+    Mat<float> fmat(2,3);  // 隐式实例化模板类
     fmat.setElement(1, 2, 3.14159f);
-    Mat<double> dmat(2,3);
+    Mat<double> dmat(2,3);  // 隐式实例化模板类
     dmat.setElement(1, 2, 2.718281828);
 
     // Mat<float> fmat2(fmat); //error
