@@ -22,10 +22,10 @@ int main()
     // // int & v2 = value2; //error
     // int& v2 = const_cast<int&>(value2);
     // v2++;
-    // cout << "value2 = " << value2 << endl;
+    // cout << "value2 = " << value2 << endl;  
 
-    // cout << "*pv2 = " << (*pv2) << endl;
-    // cout << "v2 = " << v2 << endl;
+    // cout << "*pv2 = " << (*pv2) << endl;  // (*pv2) 的值为什么和 value2 不一样？？
+    // cout << "v2 = " << v2 << endl; // v2 的值为什么和 value2 不一样？？
 
    return 0;
 }
