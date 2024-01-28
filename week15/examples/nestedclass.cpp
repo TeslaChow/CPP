@@ -16,7 +16,7 @@ private:
 public:
     Storage(Fruit f)
     {
-        this->fruit = f;
+        this->fruit = f; // 注意该处的赋值操作
     }
     void print()
     {
